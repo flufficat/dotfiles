@@ -1,0 +1,70 @@
+/*
+Arc-Dark Color Scheme
+*/
+/* Pywal import */
+@import url('file:///home/leon/.cache/wal/colors-waybar.css');
+@define-color highlight #edb5b7;
+@define-color base1  #404552;
+@define-color base2 #404552;
+@define-color base3  #4b5160;
+
+*{
+    font-family: UbuntuMono;
+}
+
+/* Neumorphism */
+window {
+    border: 0px;
+    border-radius: 16px;
+    background-color: @color8;
+}
+
+#input {
+    margin-bottom: 15px;
+    padding:3px;
+    border-radius: 16px;
+    border:none;
+    color: white;
+    text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.25), 1px 1px 2px rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.2) inset,
+	       -2px -2px 3px 0 rgba(255, 255, 255, 0.5) inset;
+    background: linear-gradient(45deg,rgba(0, 0, 0, 0.1),rgba(255, 255, 255, 0.2));
+}
+
+#inner-box {
+    background: transparent;
+    border-radius: 16px;
+    margin: 12px;
+}
+
+#outer-box {
+    margin: 0px;
+    padding: 15px;
+    background-color: @color8;
+    border: 2px;
+    border-color: @foreground;
+    border-radius: 16px;
+}
+
+#text {
+    padding: 5px;
+    color: white;
+    text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.25),
+	1px 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+#entry {
+    border-radius: 16px;
+    margin: 12px;
+    background-color: @color8;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25), -1px -1px 2px rgba(255, 255, 255, 0.3);
+    box-shadow: 4px 4px 4px 5px rgba(0, 0, 0, 0.2),
+	       -4px -4px 4px 0 rgba(255, 255, 255, 0.5);
+    background: linear-gradient(-45deg,rgba(0, 0, 0, 0.1),rgba(255, 255, 255, 0.2));
+
+}
+
+#entry:selected {
+    background-color: @foreground;
+    border-radius: 16px;
+}
