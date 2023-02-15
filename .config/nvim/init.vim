@@ -1,3 +1,11 @@
+"░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+"░█▀▀░█░░░█░█░█▀▀░█▀▀░▀█▀░█▀▀░█▀█░▀█▀░
+"░█▀▀░█░░░█░█░█▀▀░█▀▀░░█░░█░░░█▀█░░█░░
+"░▀░░░▀▀▀░▀▀▀░▀░░░▀░░░▀▀▀░▀▀▀░▀░▀░░▀░░
+"░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+"░░░ github.com/flufficat/dotfiles ░░░
+"░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
 " Plugins will be downloaded under the specified directory.
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '/home/leon/.config/nvim/plugged')
 

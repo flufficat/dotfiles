@@ -49,13 +49,13 @@
 #waybar {background: transparent; color: #bebebe; font-family: "Ubuntu"; font-size: 14px;}
 
 /* Margins top and bottom */
-#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {margin-top: 10px; margin-bottom: 10px;}
+#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {margin-top: 2px; margin-bottom: 2px;}
 
 /* Margins left and right */
 #custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {margin-left: 5px; margin-right: 5px;}
 
 /* Padding top and bottom */
-#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {padding-top: 3px; padding-bottom: 3px;}
+#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {padding-top: 1px; padding-bottom: 1px;}
 
 /* Padding left and right */
 #custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {padding-left: 8px; padding-right: 8px;}
@@ -141,15 +141,14 @@
 #workspaces button {
     background: transparent;
     margin: 2px;
-    padding: 4px;
+    padding: 2px;
+    margin: 2px;
 }
 
 #workspaces button.focused {
     background: linear-gradient(45deg, rgba(0,0,0,0.4), rgba(255,255,255,0.5));
     background-color: @foreground;
     color: @background;
-    padding: 4px;
-    margin: 1px;
 }
 
 #workspaces button.urgent {
