@@ -1,0 +1,2 @@
+#!/bin/zsh
+mkdir /home/leon/Videos/videos_folder/ && mv /home/leon/Videos/**/*.* /home/leon/Videos/videos_folder/ && mv /home/leon/Videos/**/*(/^Fod) /home/$USER/.local/share/Trash/files && mpv /home/leon/Videos/videos_folder/*

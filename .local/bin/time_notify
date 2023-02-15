@@ -1,0 +1,2 @@
+#!/bin/zsh
+CONTENT=$(echo " $(date +"%-I:%M %p")\n $(date +"%a %d %B")\n Battery: $(cat /sys/class/power_supply/BAT1/capacity)% ") && notify-send -t 7000 "$CONTENT"
