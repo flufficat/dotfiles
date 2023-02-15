@@ -1,0 +1,20 @@
+# General
+-f "bestvideo[height<=?720][fps<=?30][vcodec!=av01]+251/140"
+#-f 137/248/136/247,ba
+--audio-quality 0
+--cookies /home/leon/.config/yt-dlp/cookies.txt
+--download-archive /home/leon/Other/.mydownloads
+--user-agent Mozilla/5.0
+--output-na-placeholder ""
+--geo-bypass 
+--alias --nohist "--no-download-archive"
+
+# Compatability
+--compat-options multistreams
+--compat-options youtube-dl
+
+# Metadata
+-o "/home/leon/Videos/%(uploader)s/%(title)s [%(duration_string)s].%(ext)s"
+--sponsorblock-mark sponsor
+--sponsorblock-chapter-title "[SponsorBlock]: %(category_names)l"
+--sponsorblock-api https://mirror.sb.mchang.xyz
