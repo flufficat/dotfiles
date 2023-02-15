@@ -32,7 +32,7 @@ window {
 #inner-box {
     background: transparent;
     border-radius: 16px;
-    margin: 12px;
+    margin: 8px;
 }
 
 #outer-box {
@@ -51,12 +51,13 @@ window {
 
 #entry {
     border-radius: 16px;
-    margin: 12px;
+    margin: 8px;
     background: linear-gradient(-45deg,rgba(0, 0, 0, 0.1),rgba(255, 255, 255, 0.1));
     background-color: @color6;
 }
 
 #entry:selected {
+    margin: 8px;
     background: linear-gradient(-45deg,rgba(0, 0, 0, 0.1),rgba(255, 255, 255, 0.1));
     background-color: @foreground;
     border-radius: 16px;
