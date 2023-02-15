@@ -1,0 +1,42 @@
+#OS junk files
+    [Tt]humbs.db
+    *.DS_Store
+
+# mpv
+    /.config/mpv/watch_later/
+    
+#Visual Studio files
+    *.[Oo]bj
+    *.user
+    *.aps
+    *.pch
+    *.vspscc
+    *.vssscc
+    *_i.c
+    *_p.c
+    *.ncb
+    *.suo
+    *.tlb
+    *.tlh
+    *.bak
+    *.[Cc]ache
+    *.ilk
+    *.log
+    *.lib
+    *.sbr
+    *.sdf
+    *.pyc
+
+# vim
+    [._]*.s[a-v][a-z]
+    [._]*.sw[a-p]
+    [._]s[a-rt-v][a-z]
+    [._]ss[a-gi-z]
+    [._]sw[a-p]
+    Session.vim
+    Sessionx.vim
+    .netrwhist
+    *~
+    tags
+    [._]*.un~
+
