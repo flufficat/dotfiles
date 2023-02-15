@@ -7,7 +7,7 @@ conffile="$XDG_CONFIG_HOME/mako/config"
 # Associative array, color name -> color code.
 declare -A colors
 colors=(
-    ["background-color"]="${color6}95"
+    ["background-color"]="${color6}e6"
     ["text-color"]="$foreground"
     ["border-color"]="$color6"
 )
