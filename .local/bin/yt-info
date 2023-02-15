@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+#source $XDG_CONFIG_HOME/yt-info/yt-info.conf
+raw_duration=$(yt-dlp -s --ignore-config --print duration $1)
+printf "%d:%02d" "$((10#$raw_duration / 60))" "$((10#$raw_duration % 60))";
+echo $formatted_duration

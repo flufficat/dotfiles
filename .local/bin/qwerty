@@ -1,0 +1,2 @@
+#!/bin/zsh
+echo -n $(cat "$1" | wofi -H 80% -W 40% --dmenu 2> /dev/null) | wl-copy

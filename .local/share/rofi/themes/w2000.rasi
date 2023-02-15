@@ -1,0 +1,178 @@
+* {
+    /* Theme settings */
+    highlight: bold;
+    scrollbar: false;
+
+    /* Gruvbox light colors */
+    w2000-background:   #262626;
+    w2000-foreground:   #AFAFAF;
+    w2000-window:       #1A1A1A;
+    w2000-green:        #97BB70;
+    w2000-dark-red:     #9d0006;
+    w2000-light-red:    #cc241d;
+    w2000-dark-yellow:  #b57614;
+    w2000-light-yellow: #d79921;
+
+    /* Theme colors */
+    background:                  @w2000-background;
+    background-color:            @w2000-background;
+    foreground:                  @w2000-foreground;
+    border-color:                @w2000-foreground;
+    separatorcolor:              @w2000-foreground;
+
+    normal-background:           @w2000-background;
+    alternate-normal-background: @w2000-background;
+    selected-normal-background:  @w2000-green;
+    normal-foreground:           @w2000-foreground;
+    alternate-normal-foreground: @w2000-foreground;
+    selected-normal-foreground:  #303030;
+
+    active-background:           @w2000-dark-yellow;
+    alternate-active-background: @w2000-dark-yellow;
+    selected-active-background:  @w2000-light-yellow;
+    active-foreground:           @w2000-background;
+    alternate-active-foreground: @w2000-background;
+    selected-active-foreground:  @w2000-background;
+
+    urgent-background:           @w2000-dark-red;
+    alternate-urgent-background: @w2000-dark-red;
+    selected-urgent-background:  @w2000-light-red;
+    urgent-foreground:           @w2000-background;
+    alternate-urgent-foreground: @w2000-background;
+    selected-urgent-foreground:  @w2000-background;
+}
+
+window {
+    background-color: @background;
+    border:           2px;
+    padding:          0;
+    width:            33%;
+    height:           35%;
+    border-color: @w2000-window;
+    border-radius: 1px;
+}
+
+mainbox {
+    border:  0;
+    padding: 0;
+}
+
+message {
+    border:       2px 0 0;
+    border-color: @w2000-background;
+    padding:      2px;
+}
+
+textbox {
+    highlight:  @highlight;
+    text-color: @w2000-green;
+}
+
+listview {
+    border:       0;
+    padding:      0;
+    border-color: @w2000-foreground;
+    spacing:      2px;
+}
+
+element {
+    border:  2px;
+    margin: 2px;
+}
+element.normal.normal {
+    background-color: @normal-background;
+    text-color:       @normal-foreground;
+    border-color:     @normal-background;
+}
+
+element.normal.urgent {
+    background-color: @urgent-background;
+    text-color:       @urgent-foreground;
+    border-color:     @urgent-background;
+}
+
+element.normal.active {
+    background-color: @active-background;
+    text-color:       @active-foreground;
+    border-color:     @active-background;
+}
+
+element.selected.normal {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+    border-color:     @selected-normal-background;
+}
+
+element.selected.urgent {
+    background-color: @selected-urgent-background;
+    text-color:       @selected-urgent-foreground;
+    border-color:     @selected-urgent-background;
+}
+
+element.selected.active {
+    background-color: @selected-active-background;
+    text-color:       @selected-active-foreground;
+    border-color:     @selected-active-background;
+}
+
+element.alternate.normal {
+    background-color: @alternate-normal-background;
+    text-color:       @alternate-normal-foreground;
+    border-color:     @alternate-normal-background;
+}
+
+element.alternate.urgent {
+    background-color: @alternate-urgent-background;
+    text-color:       @alternate-urgent-foreground;
+    border-color:     @alternate-urgent-background;
+}
+
+element.alternate.active {
+    background-color: @alternate-active-background;
+    text-color:       @alternate-active-foreground;
+    border-color:     @alternate-active-background;
+}
+
+mode-switcher {
+    border:        0;
+    border-color: @w2000-window;
+    background-color: @w2000-window;
+}
+
+inputbar {
+    spacing:    0;
+    text-color: @normal-foreground;
+    padding:    2px;
+    children:   [ prompt, textbox-prompt-sep, entry, case-indicator ];
+    background-color: @w2000-window;
+    border-color: @w2000-window; 
+}
+
+case-indicator,
+entry,
+prompt,
+button {
+    spacing:    0;
+    text-color: @normal-foreground;
+    background-color: @w2000-window;
+    border-color: @w2000-window;
+}
+
+button.selected {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+    border-color: @w2000-window;
+}
+
+textbox-prompt-sep {
+    expand:     false;
+    str:        ":";
+    text-color: @normal-foreground;
+    margin:     0 0.3em 0 0;
+    background-color: @w2000-window;
+    border-color: @w2000-window;
+}
+element-text, element-icon {
+    background-color: inherit;
+    text-color:       inherit;
+}

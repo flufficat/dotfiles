@@ -1,0 +1,2 @@
+#!/bin/zsh
+nmcli connection show --active | grep pvpn | awk '{print $1;}' | nmcli connection delete $(sed -n 1p) &&  nmcli connection show --active | grep pvpn | awk '{print $1;}' | nmcli connection delete $(sed -n 1p)
