@@ -68,16 +68,6 @@
 
 /* Text colour */
 
-window#waybar {
-    background-color: rgba(43, 48, 59, 1);
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
-}
-
-window#waybar.empty {
-    color: rgba(0,0,0,0);
-}
 #custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {color: #e6e6e6;}
 
 
@@ -140,9 +130,7 @@ window#waybar.empty {
 #window {
     background: linear-gradient(-90deg, rgba(0,0,0,0.22), rgba(255,255,255,0.15));
     background-color: @color8;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: -4px;
+    margin-left: -2px;
     border-radius: 0 18px 18px 0;
 }
 
@@ -150,9 +138,10 @@ window#waybar.empty {
     background: linear-gradient(90deg, rgba(0,0,0,0.22), rgba(255,255,255,0.15));
     font-size:13px;
     background-color: @color8;
+    padding-right: 2.5px;
     margin-left: 8px;
-    margin-right: -4px;
-    border-radius: 18px 0 0 18px;
+    margin-right: -2px;
+    border-radius: 18px 5px 5px 18px;
 }
 
 #workspaces button {
