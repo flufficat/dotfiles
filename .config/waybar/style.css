@@ -1,24 +1,10 @@
-/* =============================================================================
- *
- * Waybar configuration
- *
- * Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
- *
- * =========================================================================== */
-
-/* -----------------------------------------------------------------------------
- * Keyframes
- * -------------------------------------------------------------------------- */
-
-/*
-Arc-Dark Color Scheme
-*/
-
+/* Pywal */
 @import url('file:///home/leon/.cache/wal/colors-waybar.css');
-@define-color highlight #9780b3 ;
-@define-color base1  #404552 ;
-@define-color base2  #5a6172 ;
 
+
+/*----------------*/ 
+/* Blinking magic */
+/*----------------*/
 @keyframes blink-warning {
     70% {
         color: white;
@@ -41,95 +27,42 @@ Arc-Dark Color Scheme
     }
 }
 
-/* -----------------------------------------------------------------------------
- * Base styles
- * -------------------------------------------------------------------------- */
-/*
-window {
-    color:      rgba(64, 69, 82, 1);
-    background: rgba(29, 31, 33, 0.70);
-}
-*/
-/* Reset all styles */
-* {
-    border: none;
-    border-radius: 0;
-    min-height: 0;
-    padding: 0;
-}
+
+/*---------------*/ 
+/* Global styles */
+/*---------------*/
+
+/* All */
+* {border: none; }
 
 /* The whole bar */
-#waybar {
-    background: transparent;
-    color: #bebebe;
-    font-family: "Ubuntu";
-    font-size: 14px;
-
-}
-
-/* Every modules */
-#battery,
-#clock,
-#backlight,
-#cpu,
-#custom-keyboard-layout,
-#memory,
-#mode,
-#custom-weather,
-#network,
-#pulseaudio,
-#temperature,
-#tray,
-#idle_inhibitor,
-#custom-PBPbattery {
-}
-
-/* -----------------------------------------------------------------------------
- * Modules styles
- * -------------------------------------------------------------------------- */
-
-
+#waybar {background: transparent; color: #bebebe; font-family: "Ubuntu"; font-size: 14px;}
 
 /* Margins top and bottom */
-#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {
-    margin-top: 10px;
-    margin-bottom: 10px;}
-
+#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {margin-top: 10px; margin-bottom: 10px;}
 
 /* Margins left and right */
-#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {
-    margin-left: 5px;
-    margin-right: 5px;}
-
+#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {margin-left: 5px; margin-right: 5px;}
 
 /* Padding top and bottom */
-#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {
-    padding-top: 3px;
-    padding-bottom: 3px;}
-
+#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {padding-top: 3px; padding-bottom: 3px;}
 
 /* Padding left and right */
-#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {
-    padding-left: 8px;
-    padding-right: 8px;}
-
+#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {padding-left: 8px; padding-right: 8px;}
 
 /* Border radius */
-#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {
-    border-radius: 18px;}
-    
+#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {border-radius: 18px;}
 
 /* Shadow */
-#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces,button.focused {
-    background: linear-gradient(45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
-
-}
+#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces {background: linear-gradient(45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));}
 
 /* Text colour */
-#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {
-    color: #e6e6e6;
-}
+#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {color: #e6e6e6;}
 
+
+/*---------------*/ 
+/* Module styles */
+/*---------------*/ 
 
 #custom-power {
     margin-right: 8px;
@@ -173,10 +106,6 @@ window {
     background-color: @color3;
 }
 
-#pulseaudio.muted {
-    color: @highlight;
-}
-
 #idle_inhibitor {
     padding-left: 6px;
     padding-right: 2px;
@@ -206,6 +135,7 @@ window {
 }
 
 #workspaces button.focused {
+    background: linear-gradient(45deg, rgba(0,0,0,0.4), rgba(255,255,255,0.5));
     background-color: @foreground;
     color: @background;
     padding: 4px;
@@ -217,33 +147,7 @@ window {
     background-color: #c9545d;
 }
 
-/***
-#cpu.warning {
-    color: orange;
-}
-
-#cpu.critical {
-    color: red;
-}
-*//*
-#memory {
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-#memory.warning {
-    color: orange;
- }
-
-#memory.critical {
-    color: red;
-    animation-name: blink-critical;
-    animation-duration: 2s;
-    padding-left:5px;
-    padding-right:5px;
-}
-
+/**
 #mode {
     background: @highlight;
     border-bottom: 3px transparent;
@@ -252,22 +156,8 @@ window {
     padding: 7px;
 }
 
-#network.disconnected {
-    color: orange;
-}
-
 #temperature.critical {
     color: red;
-}
-
-
-
-
-
-#custom-launcher {
-    font-size:15px;
-    margin-left:15px;
-    margin-right:10px;
 }
 
 #backlight.icon {
@@ -276,15 +166,4 @@ window {
     background-color: @base2;
     border-radius: 4px;
 }
-***/
-/**
-#battery, #pulseaudio, #idle_inhibitor, #backlight, #clock, {
-  margin: 4px 2px;
-  padding: 0 6px;
-  background-color: @base2;
-  border-radius: 4px;
-  min-width: 20px;
-}
 **/
-
-
