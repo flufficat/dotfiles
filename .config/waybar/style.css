@@ -52,7 +52,7 @@
 #custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {margin-top: 2px; margin-bottom: 2px;}
 
 /* Margins left and right */
-#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {margin-left: 5px; margin-right: 5px;}
+#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {margin-left: 2px; margin-right: 2px;}
 
 /* Padding top and bottom */
 #custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {padding-top: 1px; padding-bottom: 1px;}
@@ -76,7 +76,7 @@
 /*---------------*/ 
 
 #custom-power {
-    margin-right: 8px;
+    margin-right: 4px;
     font-size:15px;
     padding-left: 10px;
     padding-right: 10px;
@@ -128,18 +128,18 @@
 }
 
 #window {
-    background: linear-gradient(-90deg, rgba(0,0,0,0.22), rgba(255,255,255,0.15));
+    background: linear-gradient(-90deg, rgba(190,190,190,0.3), rgba(120,120,120,0.3));
     background-color: @color8;
     margin-left: -2px;
     border-radius: 0 18px 18px 0;
 }
 
 #workspaces {
-    background: linear-gradient(90deg, rgba(0,0,0,0.22), rgba(255,255,255,0.15));
+    background: linear-gradient(90deg, rgba(30,30,30,0.3), rgba(130,130,130,0.3));
     font-size:13px;
     background-color: @color8;
     padding-right: 2.5px;
-    margin-left: 8px;
+    margin-left: 4px;
     margin-right: -2px;
     border-radius: 18px 5px 5px 18px;
 }

@@ -49,7 +49,7 @@
       <outline title="Surveillance Report" text="Surveillance Report" description="Surveillance Report" type="rss" id="dwvowgs" sortColumn="time" xmlUrl="https://api.substack.com/feed/podcast/1180773.rss" htmlUrl="https://surveillancepod.substack.com/podcast" updateInterval="-1" collapsed="true"/>
       <outline title="The Mullvad Blog" text="The Mullvad Blog" description="The Mullvad Blog" type="atom" id="qlkdpwf" sortColumn="time" xmlUrl="https://mullvad.net/en/blog/feed/atom/" htmlUrl="https://www.mullvad.net/blog/" updateInterval="-1" collapsed="true"/>
     </outline>
-    <outline title="Updates" text="Updates" description="Updates" type="folder" id="amsagfj" sortColumn="time" collapsed="true">
+    <outline title="Updates" text="Updates" description="Updates" type="folder" id="amsagfj" sortColumn="time" expanded="true">
       <outline title="Accrescent" text="Accrescent" description="Accrescent" type="atom" id="mscrhqt" sortColumn="time" xmlUrl="https://github.com/accrescent/accrescent/releases.atom" htmlUrl="https://github.com/accrescent/accrescent/releases" updateInterval="-1" collapsed="true"/>
       <outline title="Anytime player" text="Anytime player" description="Anytime player" type="atom" id="emmhhpk" sortColumn="time" xmlUrl="https://github.com/amugofjava/anytime_podcast_player/tags.atom" htmlUrl="https://github.com/amugofjava/anytime_podcast_player/releases" updateInterval="-1" collapsed="true"/>
       <outline title="AuroraStore tags" text="AuroraStore tags" description="AuroraStore tags" type="atom" id="sdmwosc" sortColumn="time" xmlUrl="https://gitlab.com/AuroraOSS/AuroraStore/-/tags?format=atom" htmlUrl="https://gitlab.com/AuroraOSS/AuroraStore/-/tags" updateInterval="-1" collapsed="true"/>
