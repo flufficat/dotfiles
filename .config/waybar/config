@@ -13,8 +13,8 @@
     "height": 30,
 
 // Bar order
-    "modules-left": ["sway/workspaces","sway/window"],
-    "modules-center": [],
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["sway/window"],
     "modules-right": [
         //"network",
         "tray",

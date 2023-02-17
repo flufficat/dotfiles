@@ -43,22 +43,16 @@
 /*---------------*/
 
 /* All */
-* {border: none;font-family: "Ubuntu"; font-size: 14px;}
+* {border: none; }
 
 /* The whole bar */
-window#waybar {background: transparent;}
-window > box {
-    margin: 4px;
-    background: rgba(41, 42, 43, 0.9);
-    border-radius: 10px;
-}
-
+#waybar {background: transparent; color: #bebebe; font-family: "Ubuntu"; font-size: 14px;}
 
 /* Margins top and bottom */
-#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {margin-top: 0px; margin-bottom: 0px;}
+#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {margin-top: 2px; margin-bottom: 2px;}
 
 /* Margins left and right */
-#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {margin-left: 0px; margin-right: 0px;}
+#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {margin-left: 2px; margin-right: 2px;}
 
 /* Padding top and bottom */
 #custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {padding-top: 1px; padding-bottom: 1px;}
@@ -67,10 +61,14 @@ window > box {
 #custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {padding-left: 8px; padding-right: 8px;}
 
 /* Border radius */
-#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {border-radius: 1px;}
+#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {border-radius: 18px;}
 
 /* Shadow */
-#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces {background: transparent;}
+#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces {background: linear-gradient(45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));}
+
+/* Text colour */
+
+#custom-power, #clock, #battery, #pulseaudio, #idle_inhibitor, #tray, #window, #workspaces, #workspaces button {color: #e6e6e6;}
 
 
 /*---------------*/ 
@@ -82,18 +80,18 @@ window > box {
     font-size:15px;
     padding-left: 10px;
     padding-right: 10px;
-    color: @color5;
+    background-color: @color5;
 }
 
 #clock {
-    color: @color4;
+    background-color: @color4;
 }
 
 #battery {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    color: @color2;
+    background-color: @color2;
 }
 
 #battery.warning {
@@ -116,49 +114,52 @@ window > box {
 }
 
 #pulseaudio {
-    color: @color3;
+    background-color: @color3;
 }
 
 #idle_inhibitor {
     padding-left: 6px;
     padding-right: 2px;
-    color: @color6;
+    background-color: @color6;
 }
 
 #tray {
-    color: @color8;
+    background-color: @color8;
 }
 
 #window {
-    color: @foreground;
+    background: linear-gradient(-90deg, rgba(190,190,190,0.3), rgba(120,120,120,0.3));
+    background-color: @color8;
     margin-left: -2px;
+    border-radius: 0 18px 18px 0;
 }
 
 #workspaces {
-    color: @color8;
-    font-weight: 100;
-    font-style: normal;
-    padding: 0;
+    background: linear-gradient(90deg, rgba(30,30,30,0.3), rgba(130,130,130,0.3));
+    font-size:13px;
+    background-color: @color8;
     padding-right: 2.5px;
+    margin-left: 4px;
     margin-right: -2px;
+    border-radius: 18px 5px 5px 18px;
 }
 
 #workspaces button {
-    margin: 0;
-    margin-right: 2px;
+    background: transparent;
+    margin: 2px;
     padding: 2px;
+    margin: 2px;
 }
 
 #workspaces button.focused {
-    color: @color2;
-    font-weight: 900;
-    font-style: italic;
-    border-radius: 10px;
+    background: linear-gradient(45deg, rgba(0,0,0,0.4), rgba(255,255,255,0.5));
+    background-color: @foreground;
+    color: @background;
 }
 
 #workspaces button.urgent {
     border-color: #c9545d;
-    color: #c9545d;
+    background-color: #c9545d;
 }
 
 /**
