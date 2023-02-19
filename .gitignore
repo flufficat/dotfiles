@@ -3,8 +3,14 @@
     *.DS_Store
 
 # mpv
-    /.config/mpv/watch_later/
-    
+    .config/mpv/watch_later/
+
+# qBittorent
+    .config/qBittorrent/qBittorrent-data.conf
+
+# yt-dlp
+    .config/yt-dlp/cookies.txt
+
 #Visual Studio files
     *.[Oo]bj
     *.user

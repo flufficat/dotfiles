@@ -1,6 +1,6 @@
 # Assign workspaces
-assign [app_id="firefox"] 1
-for_window [app_id="firefox"] focus
+assign [app_id="brave-browser"] 1
+for_window [app_id="brave-browser"] focus
 
 assign [class="Brave-browser"] 1
 for_window [class="Brave-browser"] focus
@@ -11,8 +11,10 @@ for_window [app_id="Alacritty"] focus
 assign [app_id="Thunar"] 3
 for_window [app_id="Thunar"] focus
 
-assign [class="Telegram"] 4
-for_window [class="Telegram"] focus
+assign [app_id="mpv"] 3
+
+assign [class="qBittorrent"] 4
+for_window [class="qBittorrent"] focus
 
 
 for_window [app_id="xed"] focus
@@ -53,3 +55,5 @@ for_window [app_id="firefox" title="Firefox — Sharing Indicator"] kill
 # Inhibit idle
 for_window [app_id="firefox"] inhibit_idle fullscreen
 for_window [app_id="Chromium"] inhibit_idle fullscreen
+for_window [app_id="brave-browser"] inhibit_idle fullscreen
+for_window [app_id="mpv"] inhibit_idle fullscreen
