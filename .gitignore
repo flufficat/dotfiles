@@ -3,7 +3,7 @@
     *.DS_Store
 
 # mpv
-    .config/mpv/watch_later/
+    .config/mpv/watch_later/*
 
 # qBittorent
     .config/qBittorrent/qBittorrent-data.conf
