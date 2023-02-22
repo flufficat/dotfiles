@@ -9,9 +9,12 @@ assign [app_id="Alacritty"] 2
 for_window [app_id="Alacritty"] focus
 
 assign [app_id="Thunar"] 3
+assign [app_id="thunar"] 3
 for_window [app_id="Thunar"] focus
+for_window [app_id="thunar"] focus
 
 assign [app_id="mpv"] 3
+for_window [app_id="mpv"] focus
 
 assign [class="qBittorrent"] 4
 for_window [class="qBittorrent"] focus

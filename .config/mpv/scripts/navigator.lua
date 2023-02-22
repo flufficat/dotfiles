@@ -26,7 +26,7 @@ local settings = {
   key_navclose = "ESC",
 
   --fallback if no file is open, should be a string that points to a path in your system
-  defaultpath = "$HOME/Videos",
+  defaultpath = "/home/leon/Videos",
   forcedefault = false, --force navigation to start from defaultpath instead of currently playing file
   --favorites in format { 'Path to directory, notice trailing /' }
   --on windows use double backslash c:\\my\\directory\\

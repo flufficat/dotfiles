@@ -132,8 +132,8 @@ exec swayidle -w\
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
-    bindsym $mod+g splitv
+    #bindsym $mod+b splith
+    #bindsym $mod+g splitv
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
@@ -217,14 +217,15 @@ bindsym $mod+r mode "resize"
 #
 # Backlight
 #
-    bindsym XF86MonBrightnessUp exec brightnessctl -c backlight set +5%
-    bindsym XF86MonBrightnessDown exec brightnessctl -c backlight set 5%-
+    bindsym XF86MonBrightnessUp exec brightnessctl -c backlight set +3%
+    bindsym XF86MonBrightnessDown exec brightnessctl -c backlight set 3%-
 #
 # App shortcuts
 #
-    bindsym $mod+v exec thunar
+    bindsym $mod+v exec mpv --player-operation-mode=pseudo-gui
     bindsym $mod+w exec /usr/bin/brave -no-default-browser-check
     bindsym $mod+c exec /home/leon/.local/bin/time_notify
+    bindsym $mod+g exec thunar
 #
 # Screenshots
 #
