@@ -230,7 +230,7 @@ bindsym $mod+r mode "resize"
 # Screenshots
 #
     bindsym print exec /usr/share/sway/scripts/grimshot --notify save output
-    bindsym Shift+print exec ~/.config/sway/scripts/screenshot.sh
+    bindsym Shift+print exec grim -l 1 -g "$(slurp)" ~/Pictures/$(date +%Y-%m-%d_%H-%m-%s).png
 #
 # Keybindings List
 #
