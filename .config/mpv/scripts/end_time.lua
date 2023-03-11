@@ -4,10 +4,11 @@ local ass_e = mp.get_property_osd("osd-ass-cc/1")
 
 mp.add_key_binding('Ctrl+t', 'end-time', function()
 
-finishwhen = os.date('%I:%M:%S',os.time()+mp.get_property("time-remaining"))
+finishwhen = os.date('%I:%M',os.time()+mp.get_property("time-remaining"))
 
-timeremaining = os.date('%H:%M:%S',mp.get_property("time-remaining")-3600)
+--  timeremaining = os.date('%Mm',mp.get_property("time-remaining")-3600)
+timeremaining = mp.get_property("time-remaining")/60
 
-mp.osd_message(string.format("Remaining: %s \nVideo ends at: %s", timeremaining, finishwhen),3)
+mp.osd_message(string.format("Video ends at: %s\n    Remaining: %dm", finishwhen, timeremaining),6)
 
 end)

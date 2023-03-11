@@ -102,6 +102,20 @@ exec swayidle -w\
 #
 # Workspaces:
 #
+    # Move to workspace w/ arrow keys
+    bindsym $mod+alt+Left workspace prev
+    bindsym $mod+alt+Right workspace next
+    #bindsym $mod+alt+Left workspace prev_on_output 
+    #bindsym $mod+alt+Right workspace next_on_output 
+
+    # move window to workspace w/ arrow keys
+    bindsym $mod+Shift+alt+Left move container to workspace prev
+    bindsym $mod+Shift+alt+Right move container to workspace next
+    
+    # Move to nect output
+    bindsym $mod+x move container to output HDMI-A-1
+    bindsym $mod+z move container to output eDP-1
+
     # Switch to workspace
     bindsym $mod+1 workspace number 1
     bindsym $mod+2 workspace number 2

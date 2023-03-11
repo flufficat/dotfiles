@@ -29,7 +29,7 @@ local settings = {
   key_shuffleplaylist = "",
   key_reverseplaylist = "",
   key_loadfiles = "",
-  key_saveplaylist = "",
+  key_saveplaylist = "S",
 
   --replaces matches on filenames based on extension, put as empty string to not replace anything
   --replace rules are executed in provided order
@@ -87,16 +87,16 @@ local settings = {
   sortplaylist_on_start = false,
 
   --sort playlist when files are added to playlist
-  sortplaylist_on_file_add = false,
+  sortplaylist_on_file_add = true,
 
   --use alphanumerical sort
   alphanumsort = true,
 
   --"linux | windows | auto"
-  system = "auto",
+  system = "linux",
 
   --Use ~ for home directory. Leave as empty to use mpv/playlists
-  playlist_savepath = "",
+  playlist_savepath = "~/Videos",
 
   --save playlist automatically after current file was unloaded
   save_playlist_on_file_end = false,
@@ -106,7 +106,7 @@ local settings = {
   --2 shows playlist, 1 shows current file(filename strip applied) as osd text, 0 shows nothing
   --instead of using this you can also call script-message playlistmanager show playlist/filename
   --ex. KEY playlist-next ; script-message playlistmanager show playlist
-  show_playlist_on_fileload = 0,
+  show_playlist_on_fileload = 1,
 
   --sync cursor when file is loaded from outside reasons(file-ending, playlist-next shortcut etc.)
   --has the sideeffect of moving cursor if file happens to change when navigating
@@ -120,7 +120,7 @@ local settings = {
   loop_cursor = true,
 
   --youtube-dl executable for title resolving if enabled, probably "youtube-dl" or "yt-dlp", can be absolute path
-  youtube_dl_executable = "youtube-dl",
+  youtube_dl_executable = "yt-dlp",
 
 
   --####  VISUAL SETTINGS
@@ -158,7 +158,7 @@ local settings = {
   title_suffix = " - mpv",
 
   --slice long filenames, and how many chars to show
-  slice_longfilenames = false,
+  slice_longfilenames = true,
   slice_longfilenames_amount = 70,
 
   --Playlist header template
