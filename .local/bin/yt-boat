@@ -43,7 +43,7 @@ In newsboat\n\
 }
 
 # Options
-while test $# -gt 0; do
+while test "$#" -gt 0; do
 	case "$1" in
 		-a|--add)
 			shift

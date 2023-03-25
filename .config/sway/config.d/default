@@ -201,7 +201,7 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindsym $mod+Shift+r mode "resize"
 
 # Resize floating windows with mouse scroll:
     bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
@@ -240,6 +240,7 @@ bindsym $mod+r mode "resize"
     bindsym $mod+w exec /usr/bin/brave -no-default-browser-check
     bindsym $mod+c exec /home/leon/.local/bin/time_notify
     bindsym $mod+g exec thunar
+    bindsym $mod+r exec liferea
 #
 # Screenshots
 #

@@ -9,7 +9,7 @@ local settings = {
   -- to bind multiple keys separate them by a space
 
   -- main key
-  key_showplaylist = "SHIFT+ENTER",
+  key_showplaylist = "SHIFT+p",
 
   -- dynamic keys
   key_moveup = "UP",
