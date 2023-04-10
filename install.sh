@@ -8,7 +8,7 @@
  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 ## Repo apps
-# python-pywal liferea qbittorent brave-bin alacritty darktable fish gh mpv mullvad-vpn-bin nicotine+ neovim onlyoffice-bin stacer tlpui autotiling anki-bin appimagelauncher rmtrash exa python-pip
+# python-pywal liferea qbittorent brave-bin alacritty darktable fish gh mpv mullvad-vpn-bin nicotine+ neovim onlyoffice-bin stacer tlpui autotiling anki-bin appimagelauncher rmtrash exa python-pip swaylock-effects
 
 ## Appimages
 # simplenote bitwarden 

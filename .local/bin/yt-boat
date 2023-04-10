@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Colour variables
 green="\e[1;32m"
 red="\e[1;31m"
