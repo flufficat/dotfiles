@@ -1,11 +1,11 @@
 {
     "Books": {
-        "save_path": ""
+        "save_path": "/home/leon/active/Books"
     },
     "Film": {
         "save_path": "/home/leon/Videos"
     },
-    "Shows": {
-        "save_path": ""
+    "TV": {
+        "save_path": "/home/leon/Videos"
     }
 }

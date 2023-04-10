@@ -6,37 +6,72 @@
 #░░░ github.com/flufficat/dotfiles ░░░
 #░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-## Font and wallpaper
-image=$HOME/Pictures/wallpapers/out2.png
+### Font and wallpaper ###
 scaling=fill
-font=UbuntuMono
+font=Ubuntu
 font-size=20
+grace=5
 
-## Settings
+### Indicator ###
+indicator
 indicator-idle-visible
 indicator-caps-lock
+indicator-radius=130
+indicator-thickness=7
+
+### Text ###
+layout-text-color=d8dee9
 show-failed-attempts
 ignore-empty-password
+clock
+datestr=%a %-d %B
+timestr=%H:%M %p
 
-## Colours
-indicator-radius=115
-line-color=#3b4252
-text-color=#d8dee9
-inside-color=#2e344098
-inside-ver-color=#5e81ac
-line-ver-color=#5e81ac
-text-ver-color=#5e81ac
-ring-ver-color=#5e81ac98
-ring-color=#4c566a
-key-hl-color=#5e81ac
-separator-color=#4c566a
-layout-text-color=#eceff4
-line-wrong-color=#d08770
-text-wrong-color=#d08770
+### Colours ###
+## Normal
+text-color=d8dee9
+ring-color=d9d9d9d9
+line-color=000000
+inside-color=121212d9
+
+## Clear
+text-clear-color=d8dee9
+ring-clear-color=808000
+line-clear-color=000000
+inside-clear-color=ffff99
+
+## Caps-lock
+text-caps-lock-color=7a1f1f
+ring-caps-lock-color=7a1f1f
+line-caps-lock-color=000000
+inside-caps-lock-color=d08770
+
+## Verifying
+text-ver-color=d8dee9
+ring-ver-color=d9d9d9d9
+line-ver-color=000000
+inside-ver-color=121212d9
+
+## Wrong
+text-wrong-color=7a1f1f
+ring-wrong-color=7a1f1f
+line-wrong-color=000000
+inside-wrong-color=d08770
+
+## Highlights
+key-hl-color=00e699
+bs-hl-color=ff0000
+caps-lock-key-hl-color=ff0000
+caps-lock-bs-hl-color=ff0000
+
+### Effects ###
+screenshots
+effect-blur=7x5
+effect-vignett= 0.3:0.3
+separator-color=00000000
+fade-in=0.3
 
 ## Unused
-# indicator
 # no-unlock-indicator
 # daemonize
 # line-uses-ring
-# datestr=%A
