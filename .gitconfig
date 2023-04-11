@@ -1,0 +1,19 @@
+[user]
+	name = flufficat
+	email = 112202351+flufficat@users.noreply.github.com
+	signingkey = A096E7FC51A95CD3
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[commit]
+	gpgsign = true
+[diff]
+	guitool = meld
+	tool = meld
