@@ -10,7 +10,7 @@
 scaling=fill
 font=Ubuntu
 font-size=20
-grace=5
+#grace=5
 
 ### Indicator ###
 indicator
@@ -70,8 +70,3 @@ effect-blur=7x5
 effect-vignett= 0.3:0.3
 separator-color=00000000
 fade-in=0.3
-
-## Unused
-# no-unlock-indicator
-# daemonize
-# line-uses-ring

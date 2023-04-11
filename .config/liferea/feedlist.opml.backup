@@ -42,7 +42,7 @@
       <outline title="PhotoFocus | Opinion" text="PhotoFocus | Opinion" description="PhotoFocus | Opinion" type="rss" id="bwdjgkg" sortColumn="time" xmlUrl="https://photofocus.com/category/opinion/feed/" htmlUrl="" updateInterval="-1" collapsed="true"/>
       <outline title="PhotoFocus| Tips" text="PhotoFocus| Tips" description="PhotoFocus| Tips" type="rss" id="hcgbjob" sortColumn="time" xmlUrl="https://photofocus.com/category/quick-tips/feed/" htmlUrl="" updateInterval="-1" collapsed="true"/>
     </outline>
-    <outline title="Privacy" text="Privacy" description="Privacy" type="folder" id="ufhytyw" sortColumn="time" sortReversed="false" collapsed="true">
+    <outline title="Privacy" text="Privacy" description="Privacy" type="folder" id="ufhytyw" sortColumn="time" sortReversed="false" expanded="true">
       <outline title="Lemmy | Privacy" text="Lemmy | Privacy" description="Lemmy | Privacy" type="rss" id="gggvaba" sortColumn="time" xmlUrl="https://lemmy.ml/feeds/c/privacy.xml?sort=New" htmlUrl="https://lemmy.ml/c/privacy" updateInterval="-1" collapsed="true"/>
       <outline title="Lemmy | Privacy On Android" text="Lemmy | Privacy On Android" description="Lemmy | Privacy On Android" type="rss" id="xvwqlvl" sortColumn="time" xmlUrl="https://lemmy.ml/feeds/c/privacyonandroid.xml?sort=New" htmlUrl="https://lemmy.ml/c/privacyonandroid" updateInterval="-1" collapsed="true"/>
       <outline title="Lemmy | Private Life" text="Lemmy | Private Life" description="Lemmy | Private Life" type="rss" id="glnwvux" sortColumn="time" xmlUrl="https://lemmy.ml/feeds/c/privatelife.xml?sort=New" htmlUrl="https://lemmy.ml/c/privatelife" updateInterval="-1" collapsed="true"/>
@@ -75,7 +75,7 @@
       <outline title="Simplenote linux" text="Simplenote linux" description="Simplenote linux" type="atom" id="jwihtwo" sortColumn="time" xmlUrl="https://github.com/Automattic/simplenote-electron/releases.atom" htmlUrl="https://github.com/Automattic/simplenote-electron/releases" updateInterval="-1" collapsed="true"/>
       <outline title="Spotube" text="Spotube" description="Spotube" type="atom" id="hgynloj" sortColumn="time" xmlUrl="https://github.com/KRTirtho/spotube/releases.atom" htmlUrl="https://github.com/KRTirtho/spotube/releases" updateInterval="-1" collapsed="true"/>
     </outline>
-    <outline title="Videos" text="Videos" description="Videos" type="folder" id="roqhwei" sortColumn="time" expanded="true">
+    <outline title="Videos" text="Videos" description="Videos" type="folder" id="roqhwei" sortColumn="time" collapsed="true">
       <outline title="CKSPACE" text="CKSPACE" description="CKSPACE" type="atom" id="qjxrkmc" sortColumn="time" xmlUrl="https://yewtu.be/feed/channel/UCw3T7SvPYDHCkdMhC0NcKsw" htmlUrl="https://yewtu.be/channel/UCw3T7SvPYDHCkdMhC0NcKsw" updateInterval="-2" collapsed="true"/>
       <outline title="Diego Ruzzarin" text="Diego Ruzzarin" description="Diego Ruzzarin" type="atom" id="jfnyvit" sortColumn="time" xmlUrl="https://yewtu.be/feed/channel/UCVxXkgn7H6AM1ljNqpAKj1w" htmlUrl="https://yewtu.be/channel/UCVxXkgn7H6AM1ljNqpAKj1w" updateInterval="-2" collapsed="true"/>
       <outline title="F.D Signifier" text="F.D Signifier" description="F.D Signifier" type="atom" id="xhkimpy" sortColumn="time" xmlUrl="https://yewtu.be/feed/channel/UCgi2u-lGY-2i2ubLsUr6FbQ" htmlUrl="https://yewtu.be/channel/UCgi2u-lGY-2i2ubLsUr6FbQ" updateInterval="-2" collapsed="true"/>
