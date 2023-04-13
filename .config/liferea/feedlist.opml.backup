@@ -42,7 +42,7 @@
       <outline title="PhotoFocus | Opinion" text="PhotoFocus | Opinion" description="PhotoFocus | Opinion" type="rss" id="bwdjgkg" sortColumn="time" xmlUrl="https://photofocus.com/category/opinion/feed/" htmlUrl="" updateInterval="-1" collapsed="true"/>
       <outline title="PhotoFocus| Tips" text="PhotoFocus| Tips" description="PhotoFocus| Tips" type="rss" id="hcgbjob" sortColumn="time" xmlUrl="https://photofocus.com/category/quick-tips/feed/" htmlUrl="" updateInterval="-1" collapsed="true"/>
     </outline>
-    <outline title="Privacy" text="Privacy" description="Privacy" type="folder" id="ufhytyw" sortColumn="time" sortReversed="false" expanded="true">
+    <outline title="Privacy" text="Privacy" description="Privacy" type="folder" id="ufhytyw" sortColumn="time" sortReversed="false" collapsed="true">
       <outline title="Lemmy | Privacy" text="Lemmy | Privacy" description="Lemmy | Privacy" type="rss" id="gggvaba" sortColumn="time" xmlUrl="https://lemmy.ml/feeds/c/privacy.xml?sort=New" htmlUrl="https://lemmy.ml/c/privacy" updateInterval="-1" collapsed="true"/>
       <outline title="Lemmy | Privacy On Android" text="Lemmy | Privacy On Android" description="Lemmy | Privacy On Android" type="rss" id="xvwqlvl" sortColumn="time" xmlUrl="https://lemmy.ml/feeds/c/privacyonandroid.xml?sort=New" htmlUrl="https://lemmy.ml/c/privacyonandroid" updateInterval="-1" collapsed="true"/>
       <outline title="Lemmy | Private Life" text="Lemmy | Private Life" description="Lemmy | Private Life" type="rss" id="glnwvux" sortColumn="time" xmlUrl="https://lemmy.ml/feeds/c/privatelife.xml?sort=New" htmlUrl="https://lemmy.ml/c/privatelife" updateInterval="-1" collapsed="true"/>
