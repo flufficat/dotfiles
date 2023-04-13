@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+ALL=$(pacman --query --quiet --explicit)
+BASE_DEVEL=$(pacman --query --quiet --groups base-devel)
+
+echo "$ALL
+*********************************************
+$BASE_DEVEL" | sort | uniq -u

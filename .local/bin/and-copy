@@ -1,0 +1,70 @@
+#!/bin/bash
+#░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+#░█▀▀░█░░░█░█░█▀▀░█▀▀░▀█▀░█▀▀░█▀█░▀█▀░
+#░█▀▀░█░░░█░█░█▀▀░█▀▀░░█░░█░░░█▀█░░█░░
+#░▀░░░▀▀▀░▀▀▀░▀░░░▀░░░▀▀▀░▀▀▀░▀░▀░░▀░░
+#░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+#░░░  github.com/flufficat/qwerty  ░░░
+#░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+# Testing for platform
+if   [[ $XDG_SESSION_TYPE == "wayland" ]] ; then
+    plat="w"
+elif  [[ $QT_QPA_PLATFORM == "wayland" ]] ; then
+    plat="w"
+elif      [[ $GDK_BACKEND == "wayland" ]] ; then
+    plat="w"
+else
+    plat="x"
+fi
+
+# Manually set platform as wayland(w) or X11(x)
+#plat=w
+#plat=x
+
+# Creating temporary file
+if [[ ! -f /tmp/andcopy.txt ]] ; then
+touch /tmp/andcopy.txt 
+fi
+
+# Pasting clipboard into file
+# For wayland
+if   [[ $plat == "w" ]] ; then
+    # Testing for input into copy command
+    if [[ ! -z $1 ]] ; then
+        echo "$1" >> /tmp/andcopy.txt
+    elif [[ ! -z $(wl-paste) ]] ; then
+        echo "$(wl-paste)" >> /tmp/andcopy.txt
+    else
+	echo "No input. Please copy something or put it as an arguement e.g. and-copy <word>"
+	exit 1
+    fi
+# For X11
+elif [[ $plat == "x" ]] ; then 
+    #    # Testing for input into copy command
+    if [[ ! -z $1 ]] ; then
+        echo "$1" >> /tmp/andcopy.txt
+    elif [[ ! -z $(xclip -o) ]] ; then
+        echo $(xclip -o) >> /tmp/andcopy.txt
+    else
+	echo "No input. Please copy something or put it as an arguement e.g. and-copy <word>"
+	exit 1
+    fi
+
+else
+    echo "Please set the platform you are using manually in this script"
+    exit 1
+fi
+
+# Editing file with preferred editor
+$EDITOR /tmp/andcopy.txt
+
+# Copying contents out of file
+if   [[ $plat == "w" ]] ; then
+    echo -n $(cat /tmp/andcopy.txt) | wl-copy && : > /tmp/andcopy.txt
+elif [[ $plat == "x" ]] ; then
+    echo -n $(cat /tmp/andcopy.txt) | xclip -selection c && : > /tmp/andcopy.txt
+else
+    echo "Please set the platform you are using manually in this script"
+    exit 1
+fi
