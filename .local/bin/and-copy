@@ -7,6 +7,8 @@
 #░░░  github.com/flufficat/qwerty  ░░░
 #░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
+## NEED TO TEST IF PLAT IS ALREADY SET
+
 # Testing for platform
 if   [[ $XDG_SESSION_TYPE == "wayland" ]] ; then
     plat="w"

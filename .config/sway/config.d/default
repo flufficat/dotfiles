@@ -63,7 +63,7 @@ exec swayidle -w\
     bindsym $mod+d exec $menu
 
     # Activities
-    bindsym $mod+p exec ~/.config/wofi/windows.py
+    bindsym $mod+Shift+w exec ~/.config/wofi/windows.py
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -241,6 +241,11 @@ bindsym $mod+Shift+r mode "resize"
     bindsym $mod+c exec /home/leon/.local/bin/time_notify
     bindsym $mod+g exec thunar
     bindsym $mod+r exec liferea
+    #bindsym $mod+p exec alacritty -t ProtonVPN -e protonvpn-cli connect --fastest
+    #bindsym $mod+Shift+p exec alacritty -t ProtonVPN -e protonvpn-cli disconnect
+    bindsym $mod+p exec protonvpn-cli connect --fastest
+    bindsym $mod+Shift+p exec protonvpn-cli disconnect
+
 #
 # Screenshots
 #

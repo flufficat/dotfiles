@@ -5,6 +5,9 @@ red="\e[1;31m"
 yellow="\e[0;93m"
 reset="\e[0m"
 
+# File variables
+queue_file="/home/leon/.local/share/yt-boat/newsboat.queue"
+
 # Functions
 ERR_ () {
 	echo -e "${yellow}yt-boat: line $LINENO: Error: ${1:-"Unknown: Please submit an issue or contact me \
@@ -18,6 +21,7 @@ OK_ () {
 }
 
 QUEUE_ () {
+	echo -e "There are ${green}$(wc -l /home/leon/.local/share/yt-boat/newsboat.queue | cut -c 1)${reset} vidoes in the queue:"
 	cat /home/leon/.local/share/yt-boat/newsboat.queue
 }
 

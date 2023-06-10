@@ -76,7 +76,7 @@
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-window:
+  window:
     opacity: 0.85
     title: Alacritty
 
@@ -194,11 +194,10 @@ window:
 #draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night)
-colors:
-  # Default colors
-  primary:
-    background: '#1d1f21'
-    foreground: '#c5c8c6'
+#  colors:
+# primary:
+#   background: '#1d1f21'
+#   foreground: '#c5c8c6'
 
     # Bright and dim foreground colors
     #
@@ -447,8 +446,8 @@ colors:
 # Default:
 #   - (Linux/BSD/macOS) `$SHELL` or the user's login shell, if `$SHELL` is unset
 #   - (Windows) powershell
-shell:
-  program: /usr/bin/fish
+  shell:
+    program: /usr/bin/fish
 #  args:
 #    - --login
 
@@ -767,7 +766,7 @@ shell:
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
-key_bindings:
+  key_bindings:
    - { key: E,         mods: Control|Shift, action: SpawnNewInstance }
    - { key: Q,         mods: Control,       action: Quit             }
   #- { key: Paste,                                       action: Paste          }

@@ -7,6 +7,9 @@ exec mako
 # Network Applet
 exec nm-applet --indicator
 
+# ProtonVPN
+exec protonvpn-cli connect --fastest
+
 # GTK3 applications take a long time to start
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && \
@@ -22,4 +25,4 @@ exec_always autotiling
 exec wal -R
 
 # Sway Fader
-# exec python3 ~/.config/sway/scripts/swayfader.py      
+# exec python3 ~/.config/sway/scripts/swayfconnect --fastestader.py      
