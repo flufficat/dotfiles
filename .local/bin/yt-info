@@ -1,6 +1,5 @@
-#!/bin/zsh
+#!/bin/bash
 
-#source $XDG_CONFIG_HOME/yt-info/yt-info.conf
-raw_duration=$(yt-dlp -s --ignore-config --print duration $1)
-printf "%d:%02d" "$((10#$raw_duration / 60))" "$((10#$raw_duration % 60))";
-echo $formatted_duration
+raw_duration=$(yt-dlp -s --ignore-config --print duration $1 1>&2)
+title=$(yt-dlp -s --ignore-config --print title $1 1>&2)
+printf "%s - %d:%02d" "$title" "$((10#$raw_duration / 60))" "$((10#$raw_duration % 60))"

@@ -12,6 +12,7 @@ complete -c git-fetch -l update-shallow -d 'By default when fetching from a shal
 complete -c git-fetch -l negotiation-tip -d 'By default, Git will report, to the server, commits reachable from all local …'
 complete -c git-fetch -l negotiate-only -d 'Do not fetch anything from the server, and instead print the ancestors of the…'
 complete -c git-fetch -l dry-run -d 'Show what would be done, without making any changes'
+complete -c git-fetch -l porcelain -d 'Print the output to standard output in an easy-to-parse format for scripts'
 complete -c git-fetch -l write-fetch-head -d 'Write the list of remote refs fetched in the FETCH_HEAD file directly under $…'
 complete -c git-fetch -s f -l force -d 'When git fetch is used with <src>:<dst> refspec it may refuse to update the l…'
 complete -c git-fetch -s k -l keep -d 'Keep downloaded pack'

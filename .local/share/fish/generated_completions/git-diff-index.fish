@@ -72,6 +72,7 @@ complete -c git-diff-index -l ignore-submodules -d 'Ignore changes to submodules
 complete -c git-diff-index -l src-prefix -d 'Show the given source prefix instead of "a/"'
 complete -c git-diff-index -l dst-prefix -d 'Show the given destination prefix instead of "b/"'
 complete -c git-diff-index -l no-prefix -d 'Do not show any source or destination prefix'
+complete -c git-diff-index -l default-prefix -d 'Use the default source and destination prefixes ("a/" and "b/")'
 complete -c git-diff-index -l line-prefix -d 'Prepend an additional prefix to every line of output'
 complete -c git-diff-index -l ita-invisible-in-index -d 'By default entries added by "git add -N" appear as an existing empty file in …'
 complete -c git-diff-index -l cached -d 'Do not consider the on-disk file at all'

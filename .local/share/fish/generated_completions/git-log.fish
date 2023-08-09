@@ -37,7 +37,7 @@ complete -c git-log -l tags -d 'Pretend as if all the refs in refs/tags are list
 complete -c git-log -l remotes -d 'Pretend as if all the refs in refs/remotes are listed on the command line as …'
 complete -c git-log -l glob -d 'Pretend as if all the refs matching shell glob <glob-pattern> are listed on t…'
 complete -c git-log -l exclude -d 'Do not include refs matching <glob-pattern> that the next --all, --branches, …'
-complete -c git-log -l exclude-hidden -d 'Do not include refs that would be hidden by git-receive-pack or git-upload-pa…'
+complete -c git-log -l exclude-hidden -d 'Do not include refs that would be hidden by git-fetch, git-receive-pack or gi…'
 complete -c git-log -l reflog -d 'Pretend as if all objects mentioned by reflogs are listed on the command line…'
 complete -c git-log -l alternate-refs -d 'Pretend as if all objects mentioned as ref tips of alternate repositories wer…'
 complete -c git-log -l single-worktree -d 'By default, all working trees will be examined by the following options when …'
@@ -192,6 +192,7 @@ complete -c git-log -l ignore-submodules
 complete -c git-log -l src-prefix
 complete -c git-log -l dst-prefix
 complete -c git-log -l no-prefix
+complete -c git-log -l default-prefix
 complete -c git-log -l line-prefix
 complete -c git-log -l ita-invisible-in-index
 complete -c git-log -l ita-visible-in-index -d 'For more detailed explanation on these common options, see also gitdiffcore(7)'

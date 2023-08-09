@@ -72,6 +72,7 @@ complete -c git-diff-tree -l ignore-submodules -d 'Ignore changes to submodules 
 complete -c git-diff-tree -l src-prefix -d 'Show the given source prefix instead of "a/"'
 complete -c git-diff-tree -l dst-prefix -d 'Show the given destination prefix instead of "b/"'
 complete -c git-diff-tree -l no-prefix -d 'Do not show any source or destination prefix'
+complete -c git-diff-tree -l default-prefix -d 'Use the default source and destination prefixes ("a/" and "b/")'
 complete -c git-diff-tree -l line-prefix -d 'Prepend an additional prefix to every line of output'
 complete -c git-diff-tree -l ita-invisible-in-index -d 'By default entries added by "git add -N" appear as an existing empty file in …'
 complete -c git-diff-tree -s r -d 'recurse into sub-trees'

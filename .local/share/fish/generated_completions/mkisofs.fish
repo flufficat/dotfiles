@@ -132,6 +132,8 @@ complete -c mkisofs -o part_like_isohybrid -d 'Control whether -isohybrid-gpt-ba
 complete -c mkisofs -o iso_mbr_part_type -d 'Set the partition type of the MBR or GPT partition which represents the ISO o…'
 complete -c mkisofs -l protective-msdos-label -d 'Patch the System Area by a simple PC-DOS partition table where partition 1 cl…'
 complete -c mkisofs -l mbr-force-bootable -d 'Enforce an MBR partition with "bootable/active" flag if options like --protec…'
+complete -c mkisofs -l gpt-iso-bootable -d 'Set bit 2 of the GPT partition flags for the ISO 9660 partition if such a GPT…'
+complete -c mkisofs -l gpt-iso-not-ro -d 'Do not set bit 60 of the GPT partition flags for the ISO 9660 partition if su…'
 complete -c mkisofs -o partition_offset -d 'Cause a partition table with a single partition that begins at the given bloc…'
 complete -c mkisofs -o partition_hd_cyl -d 'Set the number of heads per cylinder for the MBR partition table'
 complete -c mkisofs -o partition_sec_hd -d 'Set the number of sectors per head for the MBR partition table'

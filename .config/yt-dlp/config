@@ -7,7 +7,7 @@
 #░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 # General
--f "bestvideo[height<=?1080][fps<=?30][vcodec!=av01]+251/140"
+-f "bestvideo[height<=?1080][fps<=?30][vcodec!=vp9]+251/251-0/140/140-0"
 #-f 137/248/136/247,ba
 --audio-quality 0
 --cookies /home/leon/.config/yt-dlp/cookies.txt

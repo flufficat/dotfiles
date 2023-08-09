@@ -1,0 +1,15 @@
+#!/bin/bash
+if test "$#" -gt 0; then
+    case "$1" in
+        -e|--edit)
+	    shift
+            echo -n $(cat "$1" | wl-copy | wofi -H 80% -W 40% --dmenu 2> /dev/null) | wl-copy && and-copy
+	;;
+        *)
+            echo -n $(cat "$1" | wl-copy) ; krunner -c | wl-copy
+	;;
+    esac
+else
+    echo "Please input a file to copy from."
+    exit 1
+fi

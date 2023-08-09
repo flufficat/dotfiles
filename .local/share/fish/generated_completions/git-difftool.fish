@@ -7,10 +7,10 @@ complete -c git-difftool -l rotate-to -d 'Start showing the diff for the given p
 complete -c git-difftool -l skip-to -d 'Start showing the diff for the given path, skipping all the paths before it'
 complete -c git-difftool -s t -l tool -d 'Use the diff tool specified by <tool>'
 complete -c git-difftool -l tool-help -d 'Print a list of diff tools that may be used with --tool'
-complete -c git-difftool -l symlinks -d 'git difftool\\(aqs default behavior is create symlinks to the working tree whe…'
+complete -c git-difftool -l symlinks -d 'git difftool\\*(Aqs default behavior is create symlinks to the working tree wh…'
 complete -c git-difftool -s x -l extcmd -d 'Specify a custom command for viewing diffs'
 complete -c git-difftool -s g -l gui -d 'When git-difftool is invoked with the -g or --gui option the default diff too…'
 complete -c git-difftool -l trust-exit-code -d 'git-difftool invokes a diff tool individually on each file'
 complete -c git-difftool -l no-symlinks -d 'instructs git difftool to create copies instead'
-complete -c git-difftool -l no-gui -d 'option can be used to override this setting.  If diff'
+complete -c git-difftool -l no-gui -d 'option can be used to override these settings.  If diff'
 

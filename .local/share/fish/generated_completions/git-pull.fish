@@ -34,6 +34,7 @@ complete -c git-pull -l update-shallow -d 'By default when fetching from a shall
 complete -c git-pull -l negotiation-tip -d 'By default, Git will report, to the server, commits reachable from all local …'
 complete -c git-pull -l negotiate-only -d 'Do not fetch anything from the server, and instead print the ancestors of the…'
 complete -c git-pull -l dry-run -d 'Show what would be done, without making any changes'
+complete -c git-pull -l porcelain -d 'Print the output to standard output in an easy-to-parse format for scripts'
 complete -c git-pull -s f -l force -d 'When git fetch is used with <src>:<dst> refspec it may refuse to update the l…'
 complete -c git-pull -s k -l keep -d 'Keep downloaded pack'
 complete -c git-pull -l prefetch -d 'Modify the configured refspec to place all refs into the refs/prefetch/ names…'

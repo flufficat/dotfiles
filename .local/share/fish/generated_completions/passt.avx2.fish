@@ -51,6 +51,8 @@ complete -c 'passt.avx2' -l netns -d 'Target network namespace to join, as a pat
 complete -c 'passt.avx2' -l netns-only -d 'Join only a target network namespace, not a user namespace, and don\'t create …'
 complete -c 'passt.avx2' -l no-netns-quit -d 'If the target network namespace is bound to the filesystem (that is, if PATH …'
 complete -c 'passt.avx2' -l config-net -d 'Configure networking in the namespace: set up addresses and routes as configu…'
+complete -c 'passt.avx2' -l no-copy-routes -d 'With --config-net, do not copy all the routes associated to the interface we …'
+complete -c 'passt.avx2' -l no-copy-addrs -d 'With --config-net, do not copy all the addresses associated to the interface …'
 complete -c 'passt.avx2' -l ns-mac-addr -d 'Configure MAC address addr on the tap interface in the namespace'
 complete -c 'passt.avx2' -l - -l - -d '1 packets transmitted, 1 received, 0% packet loss, time 0ms # ping -c1 -6 spa…'
 

@@ -36,7 +36,7 @@ complete -c git-shortlog -l tags -d 'Pretend as if all the refs in refs/tags are
 complete -c git-shortlog -l remotes -d 'Pretend as if all the refs in refs/remotes are listed on the command line as …'
 complete -c git-shortlog -l glob -d 'Pretend as if all the refs matching shell glob <glob-pattern> are listed on t…'
 complete -c git-shortlog -l exclude -d 'Do not include refs matching <glob-pattern> that the next --all, --branches, …'
-complete -c git-shortlog -l exclude-hidden -d 'Do not include refs that would be hidden by git-receive-pack or git-upload-pa…'
+complete -c git-shortlog -l exclude-hidden -d 'Do not include refs that would be hidden by git-fetch, git-receive-pack or gi…'
 complete -c git-shortlog -l reflog -d 'Pretend as if all objects mentioned by reflogs are listed on the command line…'
 complete -c git-shortlog -l alternate-refs -d 'Pretend as if all objects mentioned as ref tips of alternate repositories wer…'
 complete -c git-shortlog -l single-worktree -d 'By default, all working trees will be examined by the following options when …'

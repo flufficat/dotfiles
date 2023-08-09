@@ -1,0 +1,104 @@
+#░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+#░█▀▀░█░░░█░█░█▀▀░█▀▀░▀█▀░█▀▀░█▀█░▀█▀░
+#░█▀▀░█░░░█░█░█▀▀░█▀▀░░█░░█░░░█▀█░░█░░
+#░▀░░░▀▀▀░▀▀▀░▀░░░▀░░░▀▀▀░▀▀▀░▀░▀░░▀░░
+#░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+#░░░ github.com/flufficat/dotfiles ░░░
+#░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+
+# GENERAL
+cache-secs=10
+save-position-on-quit=yes
+cache=yes
+cache-pause-initial = no
+cache-pause = no
+demuxer-max-bytes=150000000
+demuxer-max-back-bytes=75000000
+demuxer-seekable-cache = yes
+force-seekable=no
+stream-buffer-size = 512KiB
+#gpu-hwdec-interop=vaapi
+
+# AUDIO
+volume=90
+volume-max=100
+audio-channels=stereo,5.1,7.1
+alang=jpn,jp,eng,en,enUS,en-US
+#rnnn options:bd, cb, lq, mp, sh
+#af-add=arnndn=m=/home/leon/.local/bin/rnnn/bd.rnnn
+af="acompressor=ratio=4,loudnorm"
+audio-file-auto=fuzzy                   # Load external audio with similar name as the video
+
+# VIDEO
+### HARDWARE
+  profile=low-latency
+  vo=gpu-next
+  target-trc=auto
+  gpu-api=vulkan
+  hwdec=no
+  vd-lavc-threads=0
+
+### SCALING
+  dither-depth=auto
+  scale=spline36
+  cscale=mitchell
+  dscale=mitchell
+  correct-downscaling=yes
+  linear-downscaling=yes
+  sigmoid-upscaling=yes
+
+### CORRECTIONS
+  deband=yes                              # Activate debanding
+  deband-iterations=2                     # Steps (More = Better quality, higher GPU cost)
+  deband-threshold=35                     # Strength (More = Less banding, more detail loss)
+  deband-range=16                         # Range (More = Less banding, higher GPU cost)
+  deband-grain=4                          # Dynamic Grain (More = More dynamic grain)
+  scale-antiring=0.5                      # Luma upscale (Higher = Less ringing, more detail loss)
+  dscale-antiring=0.5                     # Luma downscale (Higher = Less ringing, more detail loss)
+  cscale-antiring=0.5                     # Chroma upscale (Higher = Less ringing, more detail loss)
+
+### SVP
+  video-sync=audio
+  input-ipc-server=/tmp/mpvsocket     # Receives input from SVP
+  hr-seek-framedrop=no                # Fixes audio desync
+  resume-playback=no                  # Not compatible with SVP
+  script-opts=autospeed-xrandr=false,autospeed-speed=true,autospeed-display=auto,autospeed-exitmode=auto,autospeed-minspeed=0.9,autospeed-maxspeed=1.1,autospeed-osd=true,autospeed-osdtime=10,autospeed-osdkey=y,autospeed-estfps=false,autospeed-spause=4
+
+# OSD
+fs
+osc=no
+#border=no
+osd-bar=no
+osd-font-size=24
+osd-duration=3500
+osd-font='Trebuchet MS'
+cursor-autohide-fs-only
+autofit=75%
+autofit-larger=1920x1080 # Set max window size.
+autofit-smaller=858x480 # Set min window size.
+
+# SCREENSHOTS
+screenshot-high-bit-depth=yes
+screenshot-tag-colorspace=yes
+screenshot-webp-lossless=yes
+screenshot-format=webp
+screenshot-webp-compression=2
+screenshot-template='mpv-%td-%tm-%tY-%03n'
+screenshot-directory=/home/leon/Other/MEGAsync
+
+# SUBTITLES
+slang=eng,en,und
+demuxer-readahead-secs=10
+sub-ass-force-margins = yes
+sub-ass-force-style = kerning=yes
+sub-ass-override = force
+sub-font-size = 48
+sub-color="#E6FFFFFF"
+sub-border-size = 2
+sub-border-color="#D21C1C1C"
+sub-pos = 103
+sub-margin-y = 90
+sub-shadow-offset=0
+sub-shadow-color="#00000000"
+sub-auto=no
