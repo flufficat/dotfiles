@@ -1,0 +1,5 @@
+start=64.264512
+pause=yes
+fullscreen=no
+vf=vapoursynth=file=%48%/home/leon/.local/share/SVP4/scripts/70b27d0b.py:buffered-frames=4:concurrent-frames=5
+sid=no

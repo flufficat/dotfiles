@@ -14,3 +14,5 @@ alias link-ip="curl 'https://link-ip.nextdns.io/933184/bd093f10e2ee96a3' &> /dev
 alias maths="math"
 alias pvpn="protonvpn-cli connect --fastest"
 alias lstrash="exa -1 --icons --color always -laF --no-user --group-directories-first --no-time $XDG_DATA_HOME/Trash/files/"
+#alias mpv="flatpak run io.mpv.Mpv"
+abbr --add flush_dns 'resolvectl flush-caches'
