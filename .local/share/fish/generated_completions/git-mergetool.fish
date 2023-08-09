@@ -5,7 +5,7 @@ complete -c git-mergetool -l tool-help -d 'Print a list of merge tools that may 
 complete -c git-mergetool -s y -l no-prompt -d 'Don\'t prompt before each invocation of the merge resolution program'
 complete -c git-mergetool -l prompt -d 'Prompt before each invocation of the merge resolution program to give the use…'
 complete -c git-mergetool -s g -l gui -d 'When git-mergetool is invoked with the -g or --gui option the default merge t…'
-complete -c git-mergetool -l no-gui -d 'This overrides a previous -g or --gui setting and reads the default merge too…'
+complete -c git-mergetool -l no-gui -d 'This overrides a previous -g or --gui setting or mergetool'
 complete -c git-mergetool -o 'O<orderfile>' -d 'Process files in the order specified in the <orderfile>, which has one shell …'
 complete -c git-mergetool -o O/dev/null
 complete -c git-mergetool -l output -d 'option.  Git will attempt to detect whether meld supports'

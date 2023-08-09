@@ -47,6 +47,7 @@ complete -c git-format-patch -l ignore-submodules -d 'Ignore changes to submodul
 complete -c git-format-patch -l src-prefix -d 'Show the given source prefix instead of "a/"'
 complete -c git-format-patch -l dst-prefix -d 'Show the given destination prefix instead of "b/"'
 complete -c git-format-patch -l no-prefix -d 'Do not show any source or destination prefix'
+complete -c git-format-patch -l default-prefix -d 'Use the default source and destination prefixes ("a/" and "b/")'
 complete -c git-format-patch -l line-prefix -d 'Prepend an additional prefix to every line of output'
 complete -c git-format-patch -l ita-invisible-in-index -d 'By default entries added by "git add -N" appear as an existing empty file in …'
 complete -c git-format-patch -o '<n>' -d 'Prepare patches from the topmost <n> commits'

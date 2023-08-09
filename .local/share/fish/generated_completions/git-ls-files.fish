@@ -5,7 +5,7 @@ complete -c git-ls-files -s d -l deleted -d 'Show files with an unstaged deletio
 complete -c git-ls-files -s m -l modified -d 'Show files with an unstaged modification (note that an unstaged deletion also…'
 complete -c git-ls-files -s o -l others -d 'Show other (i. e.  untracked) files in the output'
 complete -c git-ls-files -s i -l ignored -d 'Show only ignored files in the output'
-complete -c git-ls-files -s s -l stage -d 'Show staged contents\\(aq mode bits, object name and stage number in the output'
+complete -c git-ls-files -s s -l stage -d 'Show staged contents\\*(Aq mode bits, object name and stage number in the outp…'
 complete -c git-ls-files -l directory -d 'If a whole directory is classified as "other", show just its name (with a tra…'
 complete -c git-ls-files -l no-empty-directory -d 'Do not list empty directories.  Has no effect without --directory'
 complete -c git-ls-files -s u -l unmerged -d 'Show information about unmerged files in the output, but do not show any othe…'

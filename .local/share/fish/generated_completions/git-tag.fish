@@ -12,6 +12,7 @@ complete -c git-tag -s l -l list -d 'List tags.  With optional <pattern>. , e. g
 complete -c git-tag -l sort -d 'Sort based on the key given'
 complete -c git-tag -l color -d 'Respect any colors specified in the --format option'
 complete -c git-tag -s i -l ignore-case -d 'Sorting and filtering tags are case insensitive'
+complete -c git-tag -l omit-empty -d 'Do not print a newline after formatted refs where the format expands to the e…'
 complete -c git-tag -l column -l no-column -d 'Display tag listing in columns.  See configuration variable column'
 complete -c git-tag -l contains -d 'Only list tags which contain the specified commit (HEAD if not specified)'
 complete -c git-tag -l no-contains -d 'Only list tags which don\'t contain the specified commit (HEAD if not specifie…'

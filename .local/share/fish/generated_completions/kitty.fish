@@ -8,7 +8,7 @@ complete -c kitty -l override -s o -d 'Override individual configuration options
 complete -c kitty -l directory -l working-directory -s d -d 'Change to the specified directory when launching.  Default: '
 complete -c kitty -l detach -d 'Detach from the controlling terminal, if any.  Not available on macOS'
 complete -c kitty -l session -d 'Path to a file containing the startup session (tabs, windows, layout, program…'
-complete -c kitty -l hold -d 'Remain open after child process exits'
+complete -c kitty -l hold -d 'Remain open, at a shell prompt, after child process exits'
 complete -c kitty -l single-instance -s 1 -d 'If specified only a single instance of kitty will run'
 complete -c kitty -l instance-group -d 'Used in combination with the \\%kitty --single-instance option'
 complete -c kitty -l wait-for-single-instance-window-close -d 'Normally, when using \\%kitty --single-instance, kitty will open a new window …'

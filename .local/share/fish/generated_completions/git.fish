@@ -22,6 +22,7 @@ complete -c git -l noglob-pathspecs -d 'Add "literal" magic to all pathspec'
 complete -c git -l icase-pathspecs -d 'Add "icase" magic to all pathspec'
 complete -c git -l no-optional-locks -d 'Do not perform optional operations that require locks'
 complete -c git -l list-cmds -d 'List commands by group'
+complete -c git -l attr-source -d 'Read gitattributes from <tree-ish> instead of the worktree'
 complete -c git -l all -d or
 complete -c git -s a -d 'is given then all available commands are printed'
 complete -c git -l object-format -d 'in git-init(1)'

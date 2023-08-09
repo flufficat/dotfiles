@@ -118,6 +118,7 @@ complete -c git-show -l ignore-submodules
 complete -c git-show -l src-prefix
 complete -c git-show -l dst-prefix
 complete -c git-show -l no-prefix
+complete -c git-show -l default-prefix
 complete -c git-show -l line-prefix
 complete -c git-show -l ita-invisible-in-index
 complete -c git-show -l ita-visible-in-index -d 'For more detailed explanation on these common options, see also gitdiffcore(7)'

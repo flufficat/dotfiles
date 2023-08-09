@@ -11,6 +11,5 @@ complete -c systemd-measure -l json -d 'Shows output formatted as JSON'
 complete -c systemd-measure -l no-pager -d 'Do not pipe output into a pager'
 complete -c systemd-measure -s h -l help -d 'Print a short help text and exit'
 complete -c systemd-measure -l version -d 'Print a short version string and exit'
-complete -c systemd-measure -l pcr-bank -d 'option below), which may be used to unlock encrypted credentials (see systemd…'
 complete -c systemd-measure -l tpm2-public-key -d 'on the command line of those tools.  EXIT STATUS'
 

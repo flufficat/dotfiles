@@ -132,6 +132,8 @@ complete -c xorrisofs -o part_like_isohybrid -d 'Control whether -isohybrid-gpt-
 complete -c xorrisofs -o iso_mbr_part_type -d 'Set the partition type of the MBR or GPT partition which represents the ISO o…'
 complete -c xorrisofs -l protective-msdos-label -d 'Patch the System Area by a simple PC-DOS partition table where partition 1 cl…'
 complete -c xorrisofs -l mbr-force-bootable -d 'Enforce an MBR partition with "bootable/active" flag if options like --protec…'
+complete -c xorrisofs -l gpt-iso-bootable -d 'Set bit 2 of the GPT partition flags for the ISO 9660 partition if such a GPT…'
+complete -c xorrisofs -l gpt-iso-not-ro -d 'Do not set bit 60 of the GPT partition flags for the ISO 9660 partition if su…'
 complete -c xorrisofs -o partition_offset -d 'Cause a partition table with a single partition that begins at the given bloc…'
 complete -c xorrisofs -o partition_hd_cyl -d 'Set the number of heads per cylinder for the MBR partition table'
 complete -c xorrisofs -o partition_sec_hd -d 'Set the number of sectors per head for the MBR partition table'

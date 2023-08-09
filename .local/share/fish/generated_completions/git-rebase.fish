@@ -26,7 +26,7 @@ complete -c git-rebase -l committer-date-is-author-date -d 'Instead of using the
 complete -c git-rebase -l ignore-date -l reset-author-date -d 'Instead of using the author date of the original commit, use the current time…'
 complete -c git-rebase -l signoff -d 'Add a Signed-off-by trailer to all the rebased commits'
 complete -c git-rebase -s i -l interactive -d 'Make a list of the commits which are about to be rebased'
-complete -c git-rebase -s r -l rebase-merges -d 'By default, a rebase will simply drop merge commits from the todo list, and p…'
+complete -c git-rebase -s r -l rebase-merges -l no-rebase-merges -d 'By default, a rebase will simply drop merge commits from the todo list, and p…'
 complete -c git-rebase -s x -l exec -d 'Append "exec <cmd>" after each line creating a commit in the final history'
 complete -c git-rebase -l root -d 'Rebase all commits reachable from <branch>, instead of limiting them with an …'
 complete -c git-rebase -l autosquash -l no-autosquash -d 'When the commit log message begins with "squash! . \\:" or "fixup! '

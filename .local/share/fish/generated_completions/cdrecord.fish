@@ -26,4 +26,6 @@ complete -c cdrecord -l no_rc -d 'Only if used as first command line argument th
 complete -c cdrecord -l drive_not_exclusive -d 'This option disables the use of device file locking mechanisms when acquiring…'
 complete -c cdrecord -l grow_overwriteable_iso -d 'Enable emulation of multi-session writing on overwritable media which contain…'
 complete -c cdrecord -l multi_if_possible -d 'Apply option -multi if the medium is suitable'
+complete -c cdrecord -l obs_pad -d 'Pad the data of the last write operation of a DVD-R[W] DAO session, or BD-R s…'
+complete -c cdrecord -l bdr_obs_exempt -d 'Exempt BD-R media from automatic unconditional transaction end padding, provi…'
 

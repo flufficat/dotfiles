@@ -2,9 +2,11 @@
 echo "Moving videos"
 mkdir $HOME/Videos/videos_folder/ && mv $HOME/Videos/**/*.* $HOME/Videos/videos_folder/
 echo "Cleaning up"
-/usr/bin/ls $HOME/Videos/ | grep -v "videos_folder" | for i in "$@" do
+
+FOLDERS=$(/usr/bin/ls $HOME/Videos/ | grep -v "videos_folder")
+
+for i in "$FOLDERS" do
   echo "$i"
   mv $HOME/Videos/"$i" $HOME/.local/share/Trash/files 
 done
-;;
 #mpv $HOME/Videos/videos_folder/*

@@ -72,6 +72,7 @@ complete -c git-diff -l ignore-submodules -d 'Ignore changes to submodules in th
 complete -c git-diff -l src-prefix -d 'Show the given source prefix instead of "a/"'
 complete -c git-diff -l dst-prefix -d 'Show the given destination prefix instead of "b/"'
 complete -c git-diff -l no-prefix -d 'Do not show any source or destination prefix'
+complete -c git-diff -l default-prefix -d 'Use the default source and destination prefixes ("a/" and "b/")'
 complete -c git-diff -l line-prefix -d 'Prepend an additional prefix to every line of output'
 complete -c git-diff -l ita-invisible-in-index -d 'By default entries added by "git add -N" appear as an existing empty file in …'
 complete -c git-diff -s 1 -l base -s 2 -l ours -s 3 -l theirs -d 'Compare the working tree with the "base" version (stage #1), "our branch" (st…'

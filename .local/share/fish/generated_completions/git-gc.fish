@@ -7,7 +7,7 @@ complete -c git-gc -l prune -d 'Prune loose objects older than date (default is 
 complete -c git-gc -l no-prune -d 'Do not prune any loose objects'
 complete -c git-gc -l quiet -d 'Suppress all progress reports'
 complete -c git-gc -l force -d 'Force git gc to run even if there may be another git gc instance running on t…'
-complete -c git-gc -l keep-largest-pack -d 'All packs except the largest pack and those marked with a '
+complete -c git-gc -l keep-largest-pack -d 'All packs except the largest non-cruft pack, any packs marked with a '
 complete -c git-gc -l depth -d 'option when'
 complete -c git-gc -l window -d 'of 10'
 

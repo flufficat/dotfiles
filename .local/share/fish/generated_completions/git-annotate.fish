@@ -13,7 +13,7 @@ complete -c git-annotate -s p -l porcelain -d 'Show in a format designed for mac
 complete -c git-annotate -l line-porcelain -d 'Show the porcelain format, but output commit information for each line, not j…'
 complete -c git-annotate -l incremental -d 'Show the result incrementally in a format designed for machine consumption'
 complete -c git-annotate -l encoding -d 'Specifies the encoding used to output author names and commit summaries'
-complete -c git-annotate -l contents -d 'When <rev> is not specified, the command annotates the changes starting backw…'
+complete -c git-annotate -l contents -d 'Annotate using the contents from the named file, starting from <rev> if it is…'
 complete -c git-annotate -l date -d 'Specifies the format used to output dates'
 complete -c git-annotate -l progress -d 'Progress status is reported on the standard error stream by default when it i…'
 complete -c git-annotate -s M -d 'Detect moved or copied lines within a file'

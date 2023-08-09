@@ -26,4 +26,6 @@ complete -c xorrecord -l no_rc -d 'Only if used as first command line argument t
 complete -c xorrecord -l drive_not_exclusive -d 'This option disables the use of device file locking mechanisms when acquiring…'
 complete -c xorrecord -l grow_overwriteable_iso -d 'Enable emulation of multi-session writing on overwritable media which contain…'
 complete -c xorrecord -l multi_if_possible -d 'Apply option -multi if the medium is suitable'
+complete -c xorrecord -l obs_pad -d 'Pad the data of the last write operation of a DVD-R[W] DAO session, or BD-R s…'
+complete -c xorrecord -l bdr_obs_exempt -d 'Exempt BD-R media from automatic unconditional transaction end padding, provi…'
 
